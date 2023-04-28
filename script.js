@@ -6,7 +6,7 @@ menuToggle.addEventListener('click', () => {
 });
 
 function carregaDicionario() {
-  var biografias = {
+  var biografias /* Armazena o conjunto de objetos*/ = {
     bio01: {
       nome: "Valerie Laverne Thomas",
       imagem: "https://primeirosnegros.b-cdn.net/wp-content/uploads/2021/10/topo-fonte-nasa-1138x1536.jpg",
@@ -36,17 +36,17 @@ function carregaDicionario() {
     },
   };
 
-  var content = document.getElementById("content");
+  var content /*Armazenando o conteúdo da section*/ = document.getElementById("content");/* Isso sinaliza que eu estou pegando o conteúdo através */
 
-  for (var bio in biografias) {
+  for /*Criando laço de repetição*/ (var bio in biografias) {
 
-    content.innerHTML +=
+    content.innerHTML /**/ */ += /*Faz atribuições e valores dentro da variável bio*/
 
       '<div class="card">' +
 
       '<img src="' +
 
-      biografias[bio].imagem +
+      biografias[bio/*A Variável bio faz com que o for percorra todas as informações de dentro da array */ ].imagem +
 
       '"/>' +
 
