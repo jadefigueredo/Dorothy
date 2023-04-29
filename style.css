@@ -163,10 +163,10 @@ body{
     border-radius: 10px;
   }
   
-  .card img{
+  .card > img{
     display: block;
-    width: 300px;
-    height: 300px;
+    width: 350px;
+    height: 400px;
     border-radius: 10px;
   }
   
@@ -176,17 +176,23 @@ body{
     display: inline-block;
   }
   
-  .card details summary {
+  .card details > summary {
     font-size: 16px;
     padding: 10px;
   }
   
-  .card details p{
+  .card details > p{
   padding: 0 10px;
   font-size: 14px;
   }
+
+  .card > details > a{
+    text-decoration: none;
+    color: #3c5d42;
+    font-weight: bold;
+  }
   
-  .card details blockquote{
+  .card > details > blockquote{
     font-style: italic;
     color: #3c5d42;
   }
