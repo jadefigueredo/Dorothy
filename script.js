@@ -72,7 +72,7 @@ function carregaDicionario() {
 
   };
 
-  var content /*Armazenando o conteúdo da section*/ = document.getElementById("content");/* Isso sinaliza que eu estou pegando o conteúdo através */
+  var content /*Armazenando o conteúdo da section*/ = document.getElementById("content");
 
   for /*Criando laço de repetição*/ (var bio in biografias) {
 
@@ -102,13 +102,32 @@ function carregaDicionario() {
 
       '<a href="' +
 
-      biografias[bio].fonte +
+    biografias[bio].fonte +
 
-      '">Fonte</a>' +
-      
-      "</details></div>" 
+    '">Fonte</a>' + "</details></div>"
+  }
+}
 
+function carregaSobre() {
+  var sobre = {
+    container01: {
+      titulo: "Sobre a desenvolvedora",
+      descricao: "Sou Jade Figueredo, sou estudante de análise e desenvolvimento de sistemas. No momento estou fazendo transição de carreira e sou uma estudante bastante dedicada. Meu propósito é conseguir encorajar outras mulheres negras a seguir carreira na tecnologia."
+    },
+
+    container02: {
+      titulo: "Sobre o dicionário",
+      descricao: 'O dicionário de mulheres negras nasceu de a partir do curso de Front End 2, da PROGRAMARIA, o dicionário proposto no curso era sobre mulheres negras das mais variadas áreas, mas eu busquei focar o meu dicionário apenas em mulheres negras que fizeram e ainda fazem história na tecnologia. Existe uma frase que é atribuída aos mais diversos autores que eu utilizei de inspiração para a construção do meu dicionário. <i>"É necessário conhecer o passado para compreender o presente e idealizar o futuro".</i> Conhecer a nossa ancestralidade é essencial para que seja possível nos projetarmos em um futuro de sucesso!'
+    },
+  };
+
+  var container = document.getElementsByClassName("container");
+  for (var container in sobre) {
+    container.innerHTML += '<div class="container">' + "<h2>" + sobre[container].titulo + 
+    
+    "</h2>" + "<p>" + sobre[container].descricao + "</p>" + "</div>"
   }
 }
 
 carregaDicionario()
+carregaSobre()
