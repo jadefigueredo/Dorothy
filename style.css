@@ -38,13 +38,44 @@ body{
     height: 250px;
   }
 
+  .container3{
+    display: inline-block;
+    margin: 5;
+    margin-top: 20px;
+    font-size: 20px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    align-items: center;
+    padding: 20px 80px 20px;
+    margin-bottom: 10px;
+    background-color: #cce7cb;
+    height: auto;
+  }
+
+  .about{
+    background-color: #3c5d42;
+  }
+
+ .circle-image{
+    display: inline-block;
+    border-radius: 80%;
+    overflow: hidden;
+    width: 80px;
+    height: 80px;
+  }
+
+  .circle-image > img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    flex-direction: row;
+    justify-content: space-around;
+  }
+
   h2, h3{
     display: block;
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     color:#3c5d42;
   }
-  
-
 
   *{
     margin: 0;
@@ -245,6 +276,19 @@ body{
     display: block;
     max-width: 1024px;
     width: 100%;
+    padding: 48px;
+  }
+
+  .about{
+    border-top: 0.6px solid;
+    border-color: #3c5d42;
+    padding: 48px;
+  }
+
+  .rodape{
+    border-top: 0.6px solid;
+    border-color: #3c5d42;
+    padding: 32px;
   }
   
   .card{
