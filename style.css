@@ -165,7 +165,7 @@ body{
   
   }
 
-  @media screen and (max-width: 600px) {
+  @media screen and (max-width: 760px) {
     .container1,
     .container2 {
       padding: 10px;
@@ -185,7 +185,7 @@ body{
     }
   }
   
-  @media screen and (min-width: 601px) and (max-width: 1200px) {
+  @media screen and (min-width: 760px) and (max-width: 1200px) {
     .container1,
     .container2 {
       padding: 15px 40px;
@@ -205,9 +205,10 @@ body{
     }
   }
   
-  @media screen and (min-width: 1201px) {
+  @media screen and (min-width: 760px) {
     .container1,
-    .container2 {
+    .container2,
+    .container3 {
       padding: 20px 80px;
       height: auto;
     }
