@@ -30,7 +30,7 @@ O DOM é o elemento que fica no topo de um objeto global, pensando na estrutura 
 
 ###  📌 ***Array***
 
-A array é utilizada para armazenar mais de uma informação dentro de uma única variável, ou seja, uma variável pode armazenar diferentes objetos. Utilizando a array é possível guardar diferentes objetos do mesmo tipo dentro de uma variável. É como ter um guarda roupas e armazenar roupas dentro dele.
+A array é utilizada para armazenar mais de uma informação dentro de uma única variável, ou seja, uma variável pode armazenar diferentes objetos. Utilizando a array é possível guardar diferentes objetos do mesmo tipo dentro de uma variável. É como ter um guarda roupas e armazenar várias roupas dentro dele.
 
 ## 📌 ***Objetos***
 
