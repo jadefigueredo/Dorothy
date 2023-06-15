@@ -112,27 +112,21 @@ function carregaSobre() {
   var sobre = {
     container01: {
       id: "container1",
-      titulo: "Sobre a desenvolvedora",
+      titulo: "Sobre o dicionário",
       descricao: 'O projeto nasceu a partir do meu projeto de conclusão do curso online EuProgrAmo de FrontEnd 2, inicialmente  se chamava “Dicionário de mulheres negras” e contava com alguns cards com informações a respeito de intelectuais negras de maneira geral. A partir disso, tive a ideia de focar em um dicionário de mulheres negras apenas na tecnologia, a ideia surgiu com base na minha própria experiência enquanto mulher negra na tecnologia, nunca me vi fazendo parte disso porque não via pessoas semelhantes e mim nesta área, o que contribuiu para que eu ingressasse mais tarde do que eu gostaria. Existe uma frase que é atribuída aos mais diversos autores que eu utilizei de inspiração para a construção do meu dicionário. <i>"É necessário conhecer o passado para compreender o presente e idealizar o futuro".</i> Conhecer a nossa ancestralidade é essencial para que seja possível nos projetarmos em futuro de sucesso!'
     },
 
     container02: {
       id: "container2",
-      titulo: "Sobre o dicionário",
-      descricao: 'O dicionário de mulheres negras nasceu de a partir do curso de Front End 2, da PROGRAMARIA, o dicionário proposto no curso era sobre mulheres negras das mais variadas áreas, mas eu busquei focar o meu dicionário apenas em mulheres negras que fizeram e ainda fazem história na tecnologia. Existe uma frase que é atribuída aos mais diversos autores que eu utilizei de inspiração para a construção do meu dicionário. <i>"É necessário conhecer o passado para compreender o presente e idealizar o futuro".</i> Conhecer a nossa ancestralidade é essencial para que seja possível nos projetarmos em um futuro de sucesso!'
-    },
-
-    container03: {
-      id: "container3",
       titulo: "Sobre a desenvolvedora",
-      descricao: 'Sou Jade Figueredo, sou estudante de análise e desenvolvimento de sistemas. No momento estou fazendo transição de carreira e sou uma estudante bastante dedicada. Meu propósito é conseguir encorajar outras mulheres negras a seguir carreira na tecnologia.'
+      descricao: 'Possuo Bacharelado Interdisciplinar em Humanidades pela Universidade Federal da Bahia, essa formação ampliou meu olhar para a importância da multidisciplinaridade na carreira, atualmente estou cursando o primeiro ano do curso de análise e desenvolvimento de sistemas (UNIFACS), também estou no penúltimo ano de graduação em Psicologia (UFBA). Acredito que meus conhecimentos em ciências humanas são concomitantes com a tecnologia, tenho experiências em pesquisa na área de psicologia do desenvolvimento de adolescentes focando na influência dos jogos e redes sociais nas suas rotinas lúdicas. Busco alinhar meus conhecimentos por meio da tecnologia. No momento estou estudando HTML, CSS, JavaScript e Python, faço parte da PyLadies Salvador e tenho tentado contribuir e aprender na comunidade. Meu propósito é conseguir encorajar outras mulheres negras a seguir carreira na tecnologia.'
     },
   };
 
   var about = document.getElementsByClassName("about")[0];
   about.innerHTML += "<h2>Sobre o dicionário</h2>"
   for (var info in sobre) {
-    if (sobre[info].id === "container3")
+    if (sobre[info].id === "container2")
       about.innerHTML += `<div id=${sobre[info].id}>` +
         "<span class='circle-image'><img src='imgs/jade-figueredo.JPEG' alt='Foto de Jade com blusa verde e fundo neutro'></span>" +
         "<h3>" + sobre[info].titulo + "</h3>" +
